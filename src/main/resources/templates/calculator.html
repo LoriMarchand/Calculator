@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF8">
+<title>Calculator</title>
+</head>
+<body>
+
+	<form action="/" method="post">
+		<h1>Calculator</h1>
+
+		<div>
+			<label> firstNumber <input type="number" name="firstNumber"></label>
+		</div>
+		<div>
+			<select name="operator">
+				<option disabled selected>Choose an operator...</option>
+				<option>addition</option>
+				<option>subtraction</option>
+				<option>multiplication</option>
+				<option>division</option>
+				<option>exponent</option>
+			</select>
+
+		</div>
+		<div>
+
+			<label> secondNumber <input type="number" name="secondNumber">
+			</label>
+
+		</div>
+		<div>
+
+			<button>submitButton</button>
+		</div>
+		<div></div>
+
+
+	</form>
+	<p>calculation result {{ iWantADrink.getResult }}</p>
+</body>
+</html>
